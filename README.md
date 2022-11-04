@@ -28,9 +28,9 @@ In ` 104.198.208.81 ` has a tab called ` Find a Salesperson `. Once thing I noti
 Vulnerability #2: Session Hijacking
 
 Description:
-Looking into users via ` pperson ` credentials I notice that the PHP sessions were vulnerable thorugh burp. Using the  `change PHP session ` tool I was able to change the ` index.php ` PHPSESSID from ` ocppafsrts0fdj5mq7d50uloi3 ` to ` Hellothere `. This can be a problem because if a threatactor see's that the session is susceptible for a hijacking attack then the user is vulnerable. 
+Looking into users via ` pperson ` credentials I notice that the PHP sessions were vulnerable thorugh burp. Using the  `change PHP session` tool I was able to change the ` index.php ` PHPSESSID from ` ocppafsrts0fdj5mq7d50uloi3 ` to ` Hellothere `. This can be a problem because if a threatactor see's that the session is susceptible for a hijacking attack then the user is vulnerable. 
 
-<img src=".gif">
+<img src="Session.gif">
 
 
 ## Green
