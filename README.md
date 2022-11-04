@@ -20,7 +20,7 @@ Each color is vulnerable to only 2 of the 6 possible exploits. First discover wh
 Vulnerability #1: SQL Injection
 
 Description:
-In ` 104.198.208.81 ` has a tab called ` Find a Salesperson `. Once thing I noticed was at the very bottom it shows a SQLi test. Putting the basic SQL injection for admin ( ` 'OR 1=1' `) in the URL with a random Salesperson it redirected me saying ` Database query failed. `. This tells me that the ` Find a Salesperson ` page is not  properly sanitizing queries. So adding the double hyphen ` -- ` into the attack turns it to a comment which takes me to the admin account; or in this case `id=1`. 
+In ` 104.198.208.81 ` has a tab called ` Find a Salesperson `. Once thing I noticed was the id numbers with each salesperson, so this tells me that there is an account that is considered admin. Putting the basic SQL injection for admin ( ` 'OR 1=1' `) in the URL with a random Salesperson it redirected me saying ` Database query failed. `. This tells me that the ` Find a Salesperson ` page is not properly sanitizing queries. So adding the double hyphen ` -- ` into the attack turns it to a comment which takes me to the admin account; or in this case `id=1`. 
 
 <img src="SQL.gif">
 
@@ -35,10 +35,10 @@ Looking into users via ` pperson ` credentials I notice that the PHP sessions we
 
 ## Green
 
-Vulnerability #1: __________________
+Vulnerability #1: Cross-Site Scripting (XSS)
 
 Description:
-
+Looking at the tabs in this site one particular one stood out which is ` Contact `. When you click on it there is forms to put in information. This can be considered an expoit because it is susceptible to XSS. I decided to use an alert xxs script because it is easier to make and would let me know whether or not the attack is successful. After putting ` <script>alert('hacked');</script> `, I was prompted ` Tanya found the XSS `, but when I looked into the feedbackl it showed that my XSS attacks went through successful.
 <img src=".gif">
 
 
