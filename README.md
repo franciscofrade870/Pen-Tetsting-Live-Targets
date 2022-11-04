@@ -55,16 +55,18 @@ In this test it goes to show how the threatactor can tell if he/she is sucessful
 Vulnerability #1: IDOR
 
 Description:
+Here shows guest having roles that they shouldn't even have. The max number of users I saw were 9 or `id=9`. When I go over like `id=10` or `id=11`, then it shows users that are not even sales persons. This can mean either the threatactor made a user for themself or a guest user was misplaced which can lead to many exposed exploits. 
 
-<img src=".gif">
+<img src="IDOR.gif">
 
 
-Vulnerability #2: __________________
+Vulnerability #2: Cross-Site Request Forgery
 
 Description:
+In this one I looked at the inspection element and decided to see if I could edit the user information. The first place I looked into was the csrf token, and to see if I am able to change it. Well I was able to which is bad because I should not be able to, and because of that i was able to change the user info. 
 
 <img src=".gif">
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+I did not really face much challenges, it was just a lot of re-reading materials to find something that works. Out of all of them the CSRF task was very long and I dont like working on that type of work. 
