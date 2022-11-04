@@ -52,7 +52,7 @@ In this test it goes to show how the threatactor can tell if he/she is sucessful
 
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1: IDOR
 
 Description:
 
