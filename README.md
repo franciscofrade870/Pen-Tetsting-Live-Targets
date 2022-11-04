@@ -48,7 +48,7 @@ Vulnerability #2: Username Enumeration
 Description:
 In this test it goes to show how the threatactor can tell if he/she is sucessful into finding the credentials for an account. I used the pperson credentials as an example. When I type in `pperson9999` with a random password I was alerted with `Log in was unsuccessfull`; however, when I do the same thing thing but with a correct user `pperson` with a random password that same alert went bold. Which tells me that if this attack was brute forced and was made to look for changes within the login attempts, then the threatactor would be able to tell what the correct username is. 
 
-<img src=".gif">
+<img src="User.gif">
 
 ## Red
 
