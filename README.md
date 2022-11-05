@@ -1,6 +1,6 @@
 # Pen Testing Live Targets
 
-Time spent: **X** hours spent in total
+Time spent: **12** hours spent in total
 
 > Objective: Identify vulnerabilities in three different versions of the Globitek website: blue, green, and red.
 
@@ -63,9 +63,9 @@ Here shows guest having roles that they shouldn't even have. The max number of u
 Vulnerability #2: Cross-Site Request Forgery
 
 Description:
-In this one I looked at the inspection element and decided to see if I could edit the user information. The first place I looked into was the csrf token, and to see if I am able to change it. Well I was able to which is bad because I should not be able to, and because of that i was able to change the user info. 
+In this one I looked at the inspection element and decided to see if I could edit the user information. The first place I looked into was the csrf token, and to see if I am able to change it. Well I was able to which is bad because I should not be able to, and because of that I was able to change the user info. 
 
-<img src=".gif">
+<img src="CSRF.gif">
 
 ## Notes
 
